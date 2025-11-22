@@ -9,16 +9,16 @@
 - Track user interactions to refine recommendation algorithms.
 
 **JSON Data Template:**
-``json
-[
-{{repeat(1000)}}',
-{
-_id: '{{objectId()}}',
-title: '{{lorem(1, "sentences")}}',
-author: '{{firstName()}} {{surname()}}',
-genre: '{{random("fiction", "non-fiction", "science", "history")}}',
-views: '{{integer(0, 10000)}}',
-lastAccessed: '{{date(new Date(), "YYYY-MM-ddThh:mm:ss Z")}}'
+
+json  
+[  
+{{repeat(1000)}}',  
+{  
+_id: '{{objectId()}}',  
+title: '{{lorem(1, "sentences")}}',  
+author: '{{firstName()}} {{surname()}}',  
+genre: '{{random("fiction", "non-fiction", "science", "history")}}',  
+views: '{{integer(0, 10000)}}',  
+lastAccessed: '{{date(new Date(), "YYYY-MM-ddThh:mm:ss Z")}}'  
 }
-]
-``
+]  

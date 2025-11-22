@@ -16,14 +16,15 @@
 - Analyze content accessibility using Markov chain communication properties												
 - Predict user engagement patterns using long-term behavior analysis												
 												
-**Enhanced JSON Data Template:**												
-``json												
-[												
-{{repeat(1000)}},												
-{												
-_id: '{{objectId()}}',												
-title: '{{lorem(1, "sentences")}}',												
-author: '{{firstName()}} {{surname()}}',												
+**Enhanced JSON Data Template:**						
+
+json   	   
+[  	  								
+{{repeat (1000)}},	                       	
+{		  				  			
+_id: '{{objectId()}}',	  										
+title: '{{lorem(1, "sentences")}}',		  										
+author: '{{firstName()}} {{surname()}}  ',										 		
 genre: '{{random("fiction", "non-fiction", "science", "history", "technology", "art")}}',												
 contentCategory: '{{random("academic", "popular", "reference", "entertainment")}}',												
 userInterestState: '{{random("casual", "focused", "research", "browsing")}}',												
@@ -63,7 +64,4 @@ lastGenreAccessed: '{{random("fiction", "non-fiction", "science", "history")}}',
 stationaryPreference: '{{floating(0.0, 1.0, 3, "0.000")}}',												
 lastAccessed: '{{date(new Date(), "YYYY-MM-ddThh:mm:ss Z")}}'												
 }												
-]												
-``												
-												
----												
+]																			

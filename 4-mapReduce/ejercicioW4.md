@@ -39,11 +39,12 @@
 **Unit 4 MapReduce Extensions (Add to existing Unit 3 Documents JSON):**																
 																
 **New fields to add:**																
-``json																
-{																
+``json					
+{								
 // ... existing Unit 3 Documents JSON fields remain unchanged ...																
 																
-// MapReduce-specific fields added for Unit 4:																
+// MapReduce-specific fields added for Unit 4:		
+
 mapReducePartition: '{{integer(1, 25)}}',																
 processingNode: 'node_{{integer(1, 12)}}',																
 batchId: 'batch_{{integer(1000, 9999)}}',																
