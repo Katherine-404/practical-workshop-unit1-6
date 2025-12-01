@@ -17,7 +17,7 @@ from collections import defaultdict
 #    - aggregationKey = genre_contentCategory
 # Después guardo todo en biblioteca4.json para que quede listo.
 
-with open("biblioteca3.json", "r", encoding="utf-8") as f:
+with open("biblioteca4.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 print("Registros originales (U3):", len(data))
